@@ -1,0 +1,85 @@
+import React from 'react';
+import { User, FileText, ExternalLink } from 'lucide-react';
+
+export default function About() {
+  return (
+    <section id="about" className="py-20 px-4 bg-gray-800/50 relative overflow-hidden">
+      <div className="max-w-4xl mx-auto relative z-10">
+        <div className="flex items-center gap-2 mb-12">
+          <User className="text-blue-400" />
+          <h2 className="text-3xl font-bold">About Me</h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12 mb-16">
+          <div>
+            <p className="text-gray-300 leading-relaxed mb-6 text-lg">
+              As a passionate and driven Software Development Engineer (SDE), I thrive on solving challenging problems 
+              and building impactful solutions. My journey in software development is fueled by a deep interest in 
+              algorithms, data structures, and efficient system design.
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-6 text-lg">
+              I have consistently honed my skills by working on diverse coding platforms like GeeksforGeeks, 
+              CodeChef, and InterviewBit, where I have maintained impressive streaks and solved numerous 
+              competitive programming problems.
+            </p>
+            <p className="text-gray-300 leading-relaxed text-lg">
+              With a strong foundation in C++ and a knack for developing optimized solutions, I am enthusiastic 
+              about creating high-quality software that makes a difference.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 gap-4">
+            <div className="highlight-card group">
+              <div className="p-6">
+                <a
+                  href="https://drive.google.com/file/d/1c89FFjckn6-E9u4MV8wSZOJtHhNtxypR/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="flex items-center gap-4 mb-4">
+                    <FileText className="text-blue-400 group-hover:scale-110 transition-transform" size={24} />
+                    <h3 className="text-xl font-semibold">My Resume</h3>
+                  </div>
+                </a>
+                <p className="text-gray-300 mb-4">View my resume to know more about me :)</p>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                    <p className="text-gray-300">Rank 1 in Institute (VCE) on GeeksforGeeks</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                    <p className="text-gray-300">Secured rank 326 in Job-A-Thon 36 Hiring Challenge</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                    <p className="text-gray-300">210+ Days Coding Streak</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                    <p className="text-gray-300">Letter of Recommendation from IIT Bombay</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                    <p className="text-gray-300">Cyber Security Intern at NIELIT</p>
+                  </div>
+                </div>
+                <a
+                  href="https://drive.google.com/file/d/1c89FFjckn6-E9u4MV8wSZOJtHhNtxypR/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors group"
+                >
+                  View / Download Resume
+                  <ExternalLink size={16} className="transform group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    </section>
+  );
+}
