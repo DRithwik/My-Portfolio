@@ -18,12 +18,12 @@ export default function About() {
               algorithms, data structures, and efficient system design.
             </p>
             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
-              I have consistently honed my skills by working on diverse coding platforms like GeeksforGeeks, 
+              I have consistently honed my coding skills by working on diverse coding platforms like GeeksforGeeks, 
               CodeChef, and InterviewBit, where I have maintained impressive streaks and solved numerous 
               competitive programming problems.
             </p>
             <p className="text-gray-300 leading-relaxed text-lg">
-              With a strong foundation in C++ and a knack for developing optimized solutions, I am enthusiastic 
+              With a strong foundation in React and Next.js, a knack for developing interactive user-interfaces. I am enthusiastic 
               about creating high-quality software that makes a difference.
             </p>
           </div>
