@@ -7,19 +7,19 @@ export default function CodingPlatforms() {
       name: 'GeeksforGeeks',
       username: 'rithwik_d',
       url: 'https://auth.geeksforgeeks.org/user/rithwik_d',
-      achievements: 'Rank 1 in Institute (VCE), 210+ Days Streak'
+      achievements: 'Rank 1 in Institute (VCE), 270+ Days Streak'
     },
     {
       name: 'CodeChef',
       username: 'rithwik007',
       url: 'https://www.codechef.com/users/rithwik007',
-      achievements: '150+ Days Streak'
+      achievements: '210+ Days Streak'
     },
     {
       name: 'LeetCode',
       username: 'Rithwik_D',
       url: 'https://leetcode.com/u/DRithwik/',
-      achievements: 'Consistent Problem Solving'
+      achievements: 'Advanced Problem Solving'
     },
     {
       name: 'HackerRank',
