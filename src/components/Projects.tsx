@@ -4,16 +4,15 @@ import ProjectDetails from './ProjectDetails';
 
 const projects = [
   {
-    title: 'Microsoft Loop Clone',
-    desc: '',
-    tech: ['Next.js', 'React.js', 'Tailwind CSS', 'Liveblocks'],
-    image: 'https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80',
-    link: 'https://github.com/DRithwik/toop_microsoft_loop_clone',
+    title: 'QR Code Generator',
+    tech: ['React.js', 'JavaScript', 'CSS', 'HTML'],
+    image: 'https://i.ibb.co/tMCh3Bg/chrome-U6-Qz1-LAVYD.png',
+    link: 'https://github.com/DRithwik/QR-Code-Generator',
     points: [
-      'Implemented real-time collaboration using Liveblocks',
-      'Built a rich text editor with formatting options',
-      'Added drag-and-drop file upload functionality',
-      'Integrated user authentication and workspace management'
+      'Built a simple QR code generator using React',
+      'Enabled users to input text and generate QR codes',
+      'Designed for encoding website URLs, textual data',
+      'Provided User-friendly interface.'
     ]
   },
   {
@@ -34,7 +33,7 @@ const projects = [
     desc: '',
     tech: ['React.js', 'TypeScript', 'Tailwind CSS', 'Vite'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
-    link: 'https://github.com/DRithwik/portfolio',
+    link: 'https://github.com/DRithwik/',
     points: [
       'Designed and implemented responsive layouts',
       'Added smooth animations and transitions',
@@ -43,16 +42,15 @@ const projects = [
     ]
   },
   {
-    title: 'Notion Clone',
-    desc: '',
-    tech: ['Next.js', 'TypeScript', 'Tailwind'],
-    image: 'https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80',
-    link: 'https://github.com/DRithwik',
+    title: "Password Generator",
+    tech: ["React.js", "JavaScript", "CSS", "HTML"],
+    image: "https://i.ibb.co/Y7shBCY/image.png",
+    link: "https://github.com/DRithwik/Password-Generator",
     points: [
-      'Built a block-based editor with rich formatting',
-      'Implemented real-time collaboration features',
-      'Added document sharing and permissions',
-      'Integrated cloud storage for attachments'
+      "Developed a password generator using React",
+      "Allowed users to customize password length and complexity",
+      "Included options for uppercase, lowercase, numbers, and symbols",
+      "Designed a user-friendly and intuitive interface"
     ]
   }
 ];
