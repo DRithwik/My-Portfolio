@@ -48,8 +48,8 @@ const projects = [
     link: "https://github.com/DRithwik/Password-Generator",
     points: [
       "Developed a password generator using React",
-      "Allowed users to customize password length and complexity",
-      "Included options for uppercase, lowercase, numbers, and symbols",
+      "Allowed users to customize password length,..",
+      "Included options for uppercase, lowercase,..",
       "Designed a user-friendly and intuitive interface"
     ]
   }
