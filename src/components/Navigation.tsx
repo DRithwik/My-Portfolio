@@ -59,11 +59,9 @@ export default function Navigation() {
             }}
             className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500"
           >
-            Rithwik.dev
+            Rithwik.tech
           </a>
           <div className="hidden md:flex items-center gap-2 text-gray-400">
-            <Clock size={16} className="text-blue-400" />
-            <span className="text-sm">{formatTime(currentTime)}</span>
           </div>
         </div>
 
