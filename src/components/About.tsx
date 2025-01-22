@@ -54,7 +54,7 @@ export default function About() {
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    <p className="text-gray-300">210+ Days Coding Streak</p>
+                    <p className="text-gray-300">270+ Days Coding Streak</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
@@ -62,7 +62,7 @@ export default function About() {
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    <p className="text-gray-300">Cyber Security Intern at NIELIT</p>
+                    <p className="text-gray-300">Full Stack Developer Intern at TechnoHacks Solution Pvt. Ltd.</p>
                   </div>
                 </div>
                 <a
