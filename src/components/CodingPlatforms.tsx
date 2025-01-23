@@ -17,8 +17,8 @@ export default function CodingPlatforms() {
     },
     {
       name: 'LeetCode',
-      username: 'Rithwik_D',
-      url: 'https://leetcode.com/u/DRithwik/',
+      username: 'd_rithwik',
+      url: 'https://leetcode.com/u/d_rithwik/',
       achievements: 'Advanced Problem Solving'
     },
     {
