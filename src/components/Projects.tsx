@@ -99,7 +99,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="project-link"
                   >
-                    View Code <ExternalLink size={16} />
+                    View <ExternalLink size={16} />
                   </a>
                   {project.title === 'Notion Clone' && (
                     <button 
