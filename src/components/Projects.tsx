@@ -47,6 +47,7 @@ const projects = [
     tech: ["React.js", "JavaScript", "CSS", "HTML"],
     image: "https://i.ibb.co/Y7shBCY/image.png",
     link: "https://github.com/DRithwik/Password-Generator",
+    link: "https://randomm-passwordd-generatorr.w3spaces.com/"
     points: [
       "Developed a password generator using React",
       "Allowed users to customize password length,..",
