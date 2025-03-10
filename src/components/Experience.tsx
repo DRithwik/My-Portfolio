@@ -12,7 +12,7 @@ export default function Experience() {
         <div className="experience-card mb-8">
           <h3 className="text-xl font-semibold text-blue-400">Full Stack Developer</h3>
           <p className="text-gray-300">TechnoHacks Solution Pvt. Ltd.</p>
-          <p className="text-sm text-gray-500 mb-4">January 2025 – Present </p>
+          <p className="text-sm text-gray-500 mb-4">January 2025 – March 2025 (2 months)</p>
           <ul className="list-disc list-inside text-gray-300 space-y-2">
             <li>Developed and maintained scalable web applications using React.js and Node.js</li>
             <li>Collaborated with designers and backend developers to implement new features</li>
