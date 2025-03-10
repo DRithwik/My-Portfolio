@@ -8,6 +8,7 @@ const projects = [
     tech: ['React.js', 'JavaScript', 'CSS', 'HTML'],
     image: 'https://i.ibb.co/tMCh3Bg/chrome-U6-Qz1-LAVYD.png',
     link: 'https://github.com/DRithwik/QR-Code-Generator',
+    link: 'https://qr-code-generator-116a.onrender.com',
     points: [
       'Built a simple QR code generator using React',
       'Enabled users to input text and generate QR codes',
