@@ -7,7 +7,6 @@ const projects = [
     title: 'QR Code Generator',
     tech: ['React.js', 'JavaScript', 'CSS', 'HTML'],
     image: 'https://i.ibb.co/tMCh3Bg/chrome-U6-Qz1-LAVYD.png',
-    link: 'https://github.com/DRithwik/QR-Code-Generator',
     link: 'https://qr-code-generator-116a.onrender.com',
     points: [
       'Built a simple QR code generator using React',
@@ -47,7 +46,6 @@ const projects = [
     tech: ["React.js", "JavaScript", "CSS", "HTML"],
     image: "https://i.ibb.co/Y7shBCY/image.png",
     link: "https://github.com/DRithwik/Password-Generator",
-    link: "https://randomm-passwordd-generatorr.w3spaces.com/"
     points: [
       "Developed a password generator using React",
       "Allowed users to customize password length,..",
