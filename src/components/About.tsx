@@ -66,7 +66,7 @@ export default function About() {
                   </div>
                 </div>
                 <a
-                  href="https://drive.google.com/file/d/1vTJbV8-FyFZLeaP602Up9_pGeOjY5TjU/view"
+                  href="https://drive.google.com/file/d/1am87YnHXxC0ps13rmluevL5KXr8ymtbk/view"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors group"
