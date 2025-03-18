@@ -33,7 +33,7 @@ const projects = [
     desc: '',
     tech: ['React.js', 'TypeScript', 'Tailwind CSS', 'Vite'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
-    link: 'https://github.com/DRithwik/',
+    link: 'https://github.com/DRithwik/My-Portfolio',
     points: [
       'Designed and implemented responsive layouts',
       'Added smooth animations and transitions',
