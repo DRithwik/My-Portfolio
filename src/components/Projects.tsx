@@ -10,7 +10,7 @@ const projects = [
     link: 'https://github.com/DRithwik/Microsoft-Loop-Clone',
     points: [
       'A Next.js-based collaborative workspace app',
-      'Enables real-time editing and teamwork using Liveblocks',
+      'Enables real-time editing & teamwork using Liveblocks',
       'Integrates AI assistance via Gemini API',
       'Secured with Clerk authentication'
     ]
