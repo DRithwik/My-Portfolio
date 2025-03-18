@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This repository contains the code and design f
 
 ## Technologies Used
 
-This website is built with **ReactJS** for the frontend and styled using **CSS** or **Tailwind CSS**. It features a modern, responsive design with smooth transitions to provide an engaging user experience. The site is hosted on **Netlify**, ensuring easy deployment and seamless performance. This combination of technologies results in a clean, interactive, and user-friendly interface.
+This website is built with **ReactJS** for the frontend and styled using **CSS** or **Tailwind CSS**. It features a modern, responsive design with smooth transitions to provide an engaging user experience. The site is hosted on **Render**, ensuring easy deployment and seamless performance. This combination of technologies results in a clean, interactive, and user-friendly interface.
 
 
 ## How to View My Portfolio
