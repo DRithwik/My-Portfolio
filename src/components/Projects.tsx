@@ -4,15 +4,15 @@ import ProjectDetails from './ProjectDetails';
 
 const projects = [
   {
-    title: 'QR Code Generator',
-    tech: ['React.js', 'JavaScript', 'CSS', 'HTML'],
-    image: 'https://i.ibb.co/tMCh3Bg/chrome-U6-Qz1-LAVYD.png',
-    link: 'https://qr-code-generator-116a.onrender.com',
+    title: 'Microsoft Loop Clone',
+    tech: ['Next.js', 'JavaScript', 'CSS', 'Clerk'],
+    image: 'https://i.ibb.co/bgzLGGmr/image.png',
+    link: 'https://github.com/DRithwik/Microsoft-Loop-Clone',
     points: [
-      'Built a simple QR code generator using React',
-      'Enabled users to input text and generate QR codes',
-      'Designed for encoding website URLs, textual data',
-      'Provided User-friendly interface.'
+      'A Next.js-based collaborative workspace app',
+      'Enables real-time editing and teamwork using Liveblocks',
+      'Integrates AI assistance via Gemini API',
+      'Secured with Clerk authentication'
     ]
   },
   {
