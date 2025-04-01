@@ -9,7 +9,6 @@ export default function About() {
           <User className="text-blue-400" />
           <h2 className="text-3xl font-bold">About Me</h2>
         </div>
-
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
