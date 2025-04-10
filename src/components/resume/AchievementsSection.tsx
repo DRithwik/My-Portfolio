@@ -1,6 +1,5 @@
 import React from 'react';
 import { achievements } from './data';
-
 export default function AchievementsSection() {
   return (
     <div className="mb-12">
