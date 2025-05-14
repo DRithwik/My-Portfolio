@@ -31,13 +31,13 @@ export default function CodingPlatforms() {
       name: 'Coding Ninjas',
       username: 'rithwik_d',
       url: 'https://www.naukri.com/code360/profile/e79ad955-af5d-4a19-beca-cb89b1e84273',
-      achievements: 'Level 7 in Code 360, Rank 1 in Institute (VCE)'
+      achievements: 'College Topper (VCE), Level 7 in Code 360,'
     },
     {
       name: 'InterviewBit',
       username: 'rithwik-d',
       url: 'https://www.interviewbit.com/profile/rithwik-d/',
-      achievements: 'Rank 1 in Institute (VCE)'
+      achievements: 'University Rank 1 (VCE) | Programming'
     }
   ];
 
