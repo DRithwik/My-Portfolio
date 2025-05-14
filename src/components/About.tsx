@@ -12,13 +12,14 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
-              As a passionate and driven Software Development Engineer (SDE), I thrive on solving challenging problems 
-              and building impactful solutions. My journey in software development is fueled by a deep interest in 
-              algorithms, data structures, and efficient system design.
+              I’m a passionate and driven Software Development Engineer (SDE) in the making,
+              who enjoys tackling complex problems and building meaningful solutions. 
+              My interest in software development is fueled by a love for algorithms, data structures,
+              and designing efficient systems.
             </p>
             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
               I have consistently honed my coding skills by working on diverse coding platforms like GeeksforGeeks, 
-              CodeChef, and InterviewBit, where I have maintained impressive streaks and solved numerous 
+              CodeChef, and InterviewBit, Naukri Code360 where I have maintained impressive streaks and solved numerous 
               competitive programming problems.
             </p>
             <p className="text-gray-300 leading-relaxed text-lg">
@@ -53,7 +54,7 @@ export default function About() {
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    <p className="text-gray-300">310+ Days Coding Streak</p>
+                    <p className="text-gray-300">375+ Days Coding Streak</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
