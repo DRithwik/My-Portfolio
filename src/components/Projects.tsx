@@ -22,10 +22,10 @@ const projects = [
     image: 'https://media-hosting.imagekit.io/1573d4fb17df4e3b/Final%20output%20with%20report.jpg?Expires=1841826615&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=HvEszYPaT2XyZPRtfUnD20ctzruJ5S4bnfaZvNdK33kKw3XwfI96Zt88WnnOYFP6sjhDjshyRnYuZ7hOXHsUXx5vLiXqszZFYaDvFRWEhE3Ix6YtQWvfSONUO8S-N6dTV1vQz9jAUZmyszPZgjUYGutXPqYF2aOO6XJEDuSVVqwgx8ZinwGVKPyDC6SCCPj6X3XLkJWmeIkwj3Phv8lmkoesRt6uGbnIHQ0qPuiOyjthZJc6sCgOF6IqdO7nK3Brhi5XwRD~ofrksGJSYBLAOYDJlRKqmIW3lz1nxtt5taGAiYecqmQRqKtba9HVSYLLFmvr3A33uItsa7~~z0ophA__',
     link: 'https://github.com/DRithwik/Deep-Research-AI-Agent',
     points: [
-      'Built an AI research agent with Next.js, Vercel SDK, and multiple LLMs.',
-      'Integrated Exa Search API for enhanced data sourcing.',
-      'Enabled customizable, iterative research workflows.',
-      'Used modular UI components with Tailwind and Shadcn UI.'
+      'Developed an AI research agent using Next.js & multiple LLMs.',
+      'Integrated Exa API for advanced data retrieval.',
+      'Enabled iterative, customizable research workflows.',
+      'Built a modular UI with Tailwind and Shadcn UI.'
     ]
   },
   {
