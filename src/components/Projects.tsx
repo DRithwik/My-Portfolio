@@ -18,7 +18,7 @@ const projects = [
   {
     title: 'Deep Research AI Agent',
     desc: '',
-    tech: ['Next.js 15', 'GPT-4o', 'Exa Search API', 'TypeScript'],
+    tech: ['Next.js', 'GPT-4o', 'Exa Search API', 'TypeScript'],
     image: 'https://media-hosting.imagekit.io/1573d4fb17df4e3b/Final%20output%20with%20report.jpg?Expires=1841826615&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=HvEszYPaT2XyZPRtfUnD20ctzruJ5S4bnfaZvNdK33kKw3XwfI96Zt88WnnOYFP6sjhDjshyRnYuZ7hOXHsUXx5vLiXqszZFYaDvFRWEhE3Ix6YtQWvfSONUO8S-N6dTV1vQz9jAUZmyszPZgjUYGutXPqYF2aOO6XJEDuSVVqwgx8ZinwGVKPyDC6SCCPj6X3XLkJWmeIkwj3Phv8lmkoesRt6uGbnIHQ0qPuiOyjthZJc6sCgOF6IqdO7nK3Brhi5XwRD~ofrksGJSYBLAOYDJlRKqmIW3lz1nxtt5taGAiYecqmQRqKtba9HVSYLLFmvr3A33uItsa7~~z0ophA__',
     link: 'https://github.com/DRithwik/Deep-Research-AI-Agent',
     points: [
