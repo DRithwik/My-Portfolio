@@ -13,7 +13,7 @@ export default function CodingPlatforms() {
       name: 'CodeChef',
       username: 'rithwik007',
       url: 'https://www.codechef.com/users/rithwik007',
-      achievements: '320+ Days Streak'
+      achievements: '325+ Days Streak'
     },
     {
       name: 'LeetCode',
