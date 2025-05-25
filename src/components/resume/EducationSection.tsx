@@ -22,4 +22,4 @@ export default function EducationSection() {
       </div>
     </div>
   );
-}
+} 
