@@ -12,7 +12,7 @@ This website is built with **ReactJS** for the frontend and styled using **CSS**
 1. Clone the repository to your local machine:
     ```bash
     git clone https://github.com/DRithwik/portfolio.git
-    ```
+    ``` 
 
 2. Navigate to the project directory:
     ```bash
