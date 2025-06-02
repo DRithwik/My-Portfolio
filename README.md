@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my personal portfolio! This repository contains the code and design for my online portfolio, which highlights my skills, projects, experience, and achievements as a Software Developer. Feel free to explore and connect!
+Welcome to my personal portfolio! This repository contains the code and design for my online portfolio, which highlights my skills, projects, experience, and achievements as a Software Developer. Feel free to explore and connect! 
 
 ## Technologies Used
 
