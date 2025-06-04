@@ -6,13 +6,15 @@ export default function Experience() {
     <section id="experience" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-2 mb-12">
-          <Briefcase className="text-blue-400"/>
+          <Briefcase className="text-blue-400" />
           <h2 className="text-3xl font-bold">Experience</h2>
-          </div>
+        </div>
+
+        {/* AI Developer Intern */}
         <div className="experience-card mb-8">
           <h3 className="text-xl font-semibold text-blue-400">AI Developer Intern</h3>
           <p className="text-gray-300">Summer of AI 2025, Viswam.AI</p>
-          <p className="text-sm text-gray-500 mb-4">May 2025 – Present </p>
+          <p className="text-sm text-gray-500 mb-4">May 2025 – Present</p>
           <ul className="list-disc list-inside text-gray-300 space-y-2">
             <li>Gained mastery in Python, Collaborative Software Development, and DevOps.</li>
             <li>Built a solid foundation in AI concepts to advance in AI engineering roles.</li>
@@ -21,7 +23,8 @@ export default function Experience() {
             <li>Showcased skills and emerged as a key contributor in a dynamic, free, and open-source community.</li>
           </ul>
         </div>
-        </div>
+
+        {/* Full Stack Developer */}
         <div className="experience-card mb-8">
           <h3 className="text-xl font-semibold text-blue-400">Full Stack Developer</h3>
           <p className="text-gray-300">TechnoHacks Solution Pvt. Ltd.</p>
@@ -33,7 +36,8 @@ export default function Experience() {
             <li>Integrated RESTful APIs and ensured seamless data flow between client and server</li>
             <li>Participated in code reviews and contributed to team-wide best practices</li>
           </ul>
-      </div>
+        </div>
+
       </div>
     </section>
   );
