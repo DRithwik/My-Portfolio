@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { User, FileText, ExternalLink } from 'lucide-react';
-   
+    
 export default function About() {
   return (
     <section id="about" className="py-20 px-4 bg-gray-800/50 relative overflow-hidden">
