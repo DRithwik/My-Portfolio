@@ -12,15 +12,15 @@ export default function Experience() {
 
         {/* AI Developer Intern */}
         <div className="experience-card mb-8">
-          <h3 className="text-xl font-semibold text-blue-400">AI Developer Intern</h3>
-          <p className="text-gray-300">Summer of AI 2025, Viswam.AI</p>
-          <p className="text-sm text-gray-500 mb-4">May 2025 – Present</p>
+          <h3 className="text-xl font-semibold text-blue-400">Software Developer Intern</h3>
+          <p className="text-gray-300">Inventi Globe Pvt. Ltd.</p>
+          <p className="text-sm text-gray-500 mb-4">Aug 2025 – Present</p>
           <ul className="list-disc list-inside text-gray-300 space-y-2">
-            <li>Gained mastery in Python, Collaborative Software Development, and DevOps.</li>
-            <li>Built a solid foundation in AI concepts to advance in AI engineering roles.</li>
-            <li>Acquired hands-on experience by procuring data and fine-tuning a custom AI model with a dedicated team.</li>
-            <li>Transformed finetuned models into real-world AI applications through impactful projects.</li>
-            <li>Showcased skills and emerged as a key contributor in a dynamic, free, and open-source community.</li>
+            <li>Developed and improved features for the HR management page, streamlining company workflows.</li>
+            <li>Assisted in building and deploying client websites, focusing on user-friendly design and functionality.</li>
+            <li>Enhanced web development skills and gained real-world project experience through team collaboration.</li>
+            <li>Learned effective communication and problem-solving in a professional environment.</li>
+            <li>Built practical skills in teamwork, web technologies, and real-world problem solving.</li>
           </ul>
         </div>
 
