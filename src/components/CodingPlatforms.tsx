@@ -37,7 +37,7 @@ export default function CodingPlatforms() {
       name: 'InterviewBit',
       username: 'rithwik-d',
       url: 'https://www.interviewbit.com/profile/rithwik-d/',
-      achievements: 'University Rank 1 (VCE) | Programming'
+      achievements: 'Global Rank 165'
     }
   ];
 
