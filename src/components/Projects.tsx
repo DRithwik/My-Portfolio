@@ -29,16 +29,16 @@ const projects = [
     ]
   },
   {
-    title: 'Portfolio',
+    title: 'Rx Appoints',
     desc: '',
-    tech: ['React.js', 'TypeScript', 'Tailwind CSS', 'Vite'],
-    image: 'https://i.ibb.co/BH6G8wRF/Screenshot-2025-05-14-233341.png',
-    link: 'https://github.com/DRithwik/My-Portfolio',
+    tech: ['React.js', 'Node.js + Express.js', 'MongoDB', 'TensorFlow + Solidity'],
+    image: 'https://i.ibb.co/whJC4Hv0/Screenshot-2025-10-16-194407.png',
+    link: 'https://github.com/DRithwik/Rx_appoints',
     points: [
-      'Designed and implemented responsive layouts',
-      'Added smooth animations and transitions',
-      'Integrated dynamic content loading',
-      'Optimized performance and accessibility'
+      'Used Random Forest and LSTM for smart medicine suggestions.',
+      'BERT-based assistant for queries and reminders.',
+      'Secured prescriptions via Ethereum and IPFS.',
+      'Combined AI, NLP, and blockchain for seamless healthcare management.'
     ]
   },
   {
