@@ -32,7 +32,7 @@ export default function About() {
             <div className="highlight-card group">
               <div className="p-6">
                 <a
-                  href="https://drive.google.com/file/d/1vTJbV8-FyFZLeaP602Up9_pGeOjY5TjU/view"
+                  href="https://drive.google.com/file/d/1-2MoGJh3Z3hip1VoX99DDKOMZ6GseLcn/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
