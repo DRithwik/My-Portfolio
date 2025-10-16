@@ -7,7 +7,7 @@ export default function CodingPlatforms() {
       name: 'GeeksforGeeks',
       username: 'rithwik_d',
       url: 'https://auth.geeksforgeeks.org/user/rithwik_d',
-      achievements: 'Rank 1 in Institute (VCE), 533 Days Streak'
+      achievements: 'Rank #1 in Institute (VCE), 533 Days Streak'
     },
     {
       name: 'CodeChef',
@@ -37,7 +37,7 @@ export default function CodingPlatforms() {
       name: 'InterviewBit',
       username: 'rithwik-d',
       url: 'https://www.interviewbit.com/profile/rithwik-d/',
-      achievements: 'Global Rank 105'
+      achievements: 'Global Rank #105'
     }
   ];
 
