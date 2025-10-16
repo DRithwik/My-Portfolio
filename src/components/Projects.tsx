@@ -31,14 +31,14 @@ const projects = [
   {
     title: 'Rx Appoints',
     desc: '',
-    tech: ['React.js', 'Node.js + Express.js', 'MongoDB', 'TensorFlow + Solidity'],
+    tech: ['React.js', 'Node.js', 'MongoDB', 'TensorFlow', 'Solidity'],
     image: 'https://i.ibb.co/whJC4Hv0/Screenshot-2025-10-16-194407.png',
     link: 'https://github.com/DRithwik/Rx_appoints',
     points: [
-      'Used Random Forest and LSTM for smart medicine suggestions.',
+      'AI models (RF, LSTM) for medicine suggestions.',
       'BERT-based assistant for queries and reminders.',
       'Secured prescriptions via Ethereum and IPFS.',
-      'Combined AI, NLP, and blockchain for seamless healthcare management.'
+      'Unified AI, NLP & blockchain system.'
     ]
   },
   {
