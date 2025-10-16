@@ -31,7 +31,7 @@ export default function CodingPlatforms() {
       name: 'Coding Ninjas',
       username: 'rithwik_d',
       url: 'https://www.naukri.com/code360/profile/e79ad955-af5d-4a19-beca-cb89b1e84273',
-      achievements: '1 Time(s) Topper (VCE), Level 7 in Code 360,'
+      achievements: '2 Times Topper (VCE), Level 7 in Code 360,'
     },
     {
       name: 'InterviewBit',
