@@ -32,7 +32,7 @@ export default function About() {
             <div className="highlight-card group">
               <div className="p-6">
                 <a
-                  href="https://drive.google.com/file/d/1-2MoGJh3Z3hip1VoX99DDKOMZ6GseLcn/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1-2MoGJh3Z3hip1VoX99DDKOMZ6GseLcn/view"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -66,7 +66,7 @@ export default function About() {
                   </div>
                 </div>
                 <a
-                  href="https://drive.google.com/file/d/1WD99wncCAHAmWKuH1G7c1R90ugYEHsNT/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1-2MoGJh3Z3hip1VoX99DDKOMZ6GseLcn/view"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors group"
