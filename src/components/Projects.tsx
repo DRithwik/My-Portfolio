@@ -31,7 +31,7 @@ const projects = [
   {
     title: 'Rx Appoints',
     desc: '',
-    tech: ['React.js', 'Node.js', 'MongoDB', 'TensorFlow', 'Solidity'],
+    tech: ['React.js', 'Node.js', 'MongoDB', 'Solidity'],
     image: 'https://i.ibb.co/whJC4Hv0/Screenshot-2025-10-16-194407.png',
     link: 'https://github.com/DRithwik/Rx_appoints',
     points: [
