@@ -31,7 +31,7 @@ export default function CodingPlatforms() {
       name: 'LeetCode',
       username: 'd_rithwik',
       url: 'https://leetcode.com/u/d_rithwik/',
-      achievements: 'Contest Rating: 1548 | 100 Days Badge 2025'
+      achievements: 'Contest Rating: 1548 | 200 Days Badge 2025'
     },
     {
       name: 'HackerRank',
