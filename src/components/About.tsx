@@ -62,6 +62,10 @@ export default function About() {
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
                     <p className="text-gray-300">Letter of Recommendation from IIT Bombay</p>
                   </div>
+                 <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                    <p className="text-gray-300">Interviewbit Global Rank : 50</p>
+                  </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
                     <p className="text-gray-300">Full Stack Developer Intern at TechnoHacks Solution Pvt. Ltd.</p>
