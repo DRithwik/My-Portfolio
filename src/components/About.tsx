@@ -12,19 +12,21 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
-              I’m a passionate and driven Software Development Engineer (SDE) in the making,
-              who enjoys tackling complex problems and building meaningful solutions. 
-              My interest in software development is fueled by a love for algorithms, data structures,
-              and designing efficient systems.
+             I am an enthusiastic Software Development Engineer (SDE) in the process, 
+             and I like to solve challenging issues and provide meaningful solutions. 
+             The need to design efficient systems, data structures and love of algorithms 
+             drive me to have interest in software development.
             </p>
             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
-              I have consistently honed my coding skills by working on diverse coding platforms like GeeksforGeeks, 
-              CodeChef, and InterviewBit, Naukri Code360 where I have maintained impressive streaks and solved numerous 
-              competitive programming problems.
+             My coding abilities have been continuously developed by working over various
+             coding sites such as GeeksforGeeks, CodeChef, and InterviewBit, Naukri Code360 
+             where I have been on a streak of impressive results and answered 
+             various competitive coding challenges.
             </p>
             <p className="text-gray-300 leading-relaxed text-lg">
-              With a strong foundation in React and Next.js, a knack for developing interactive user-interfaces. I am enthusiastic 
-              about creating high-quality software that makes a difference.
+              Having an enhanced background of React and Next.js, a sense of creating a 
+              personality-based user-interfaces. I am eager to develop quality 
+              software that will change a difference.
             </p>
           </div>
           
