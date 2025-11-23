@@ -13,7 +13,7 @@ export default function CodingPlatforms() {
       name: 'InterviewBit',
       username: 'rithwik-d',
       url: 'https://www.interviewbit.com/profile/rithwik-d/',
-      achievements: 'Global Rank #105'
+      achievements: 'Global Rank #50'
     },
     {
       name: 'Coding Ninjas',
