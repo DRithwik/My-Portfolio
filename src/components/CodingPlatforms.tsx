@@ -7,13 +7,13 @@ export default function CodingPlatforms() {
       name: 'GeeksforGeeks',
       username: 'rithwik_d',
       url: 'https://auth.geeksforgeeks.org/user/rithwik_d',
-      achievements: 'Rank #1 in Institute (VCE), 570+ Days Streak'
+      achievements: 'Rank #1 in Institute (VCE), 580+ Days Streak'
     },
     {
       name: 'InterviewBit',
       username: 'rithwik-d',
       url: 'https://www.interviewbit.com/profile/rithwik-d/',
-      achievements: 'Global Rank #44'
+      achievements: 'Global Rank #39'
     },
     {
       name: 'Coding Ninjas',
@@ -25,7 +25,7 @@ export default function CodingPlatforms() {
       name: 'CodeChef',
       username: 'rithwik007',
       url: 'https://www.codechef.com/users/rithwik007',
-      achievements: '510+ Days Streak'
+      achievements: '520+ Days Streak'
     },
     {
       name: 'LeetCode',
