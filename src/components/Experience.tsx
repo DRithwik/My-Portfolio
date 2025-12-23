@@ -13,7 +13,7 @@ export default function Experience() {
         {/* AI Developer Intern */}
         <div className="experience-card mb-8">
           <h3 className="text-xl font-semibold text-blue-400">Software Developer Intern</h3>
-          <p className="text-gray-300">Inventi Globe Pvt. Ltd.</p>
+          <p className="text-gray-300">Inventiglobe Pvt. Ltd.</p>
           <p className="text-sm text-gray-500 mb-4">Aug 2025 – Present</p>
           <ul className="list-disc list-inside text-gray-300 space-y-2">
             <li>Developed and improved features for the HR management page, streamlining company workflows.</li>
