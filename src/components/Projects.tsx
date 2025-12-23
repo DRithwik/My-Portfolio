@@ -3,6 +3,19 @@ import { Code2, ExternalLink } from 'lucide-react';
 import ProjectDetails from './ProjectDetails';
 
 const projects = [
+    {
+    title: 'Rx Appoints',
+    desc: '',
+    tech: ['React.js', 'Node.js', 'MongoDB', 'Solidity'],
+    image: 'https://i.ibb.co/whJC4Hv0/Screenshot-2025-10-16-194407.png',
+    link: 'https://github.com/DRithwik/Rx_appoints',
+    points: [
+      'AI models (RF, LSTM) for medicine suggestions.',
+      'BERT-based assistant for queries and reminders.',
+      'Secured prescriptions via Ethereum and IPFS.',
+      'Unified AI, NLP & blockchain system.'
+    ]
+  },
   {
     title: 'Microsoft Loop Clone',
     tech: ['Next.js', 'JavaScript', 'CSS', 'Clerk'],
@@ -26,19 +39,6 @@ const projects = [
       'Integrated Exa API for advanced data retrieval.',
       'Enabled iterative, customizable research workflows.',
       'Built a modular UI with Tailwind and Shadcn UI.'
-    ]
-  },
-  {
-    title: 'Rx Appoints',
-    desc: '',
-    tech: ['React.js', 'Node.js', 'MongoDB', 'Solidity'],
-    image: 'https://i.ibb.co/whJC4Hv0/Screenshot-2025-10-16-194407.png',
-    link: 'https://github.com/DRithwik/Rx_appoints',
-    points: [
-      'AI models (RF, LSTM) for medicine suggestions.',
-      'BERT-based assistant for queries and reminders.',
-      'Secured prescriptions via Ethereum and IPFS.',
-      'Unified AI, NLP & blockchain system.'
     ]
   },
   {
