@@ -56,7 +56,7 @@ export default function About() {
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    <p className="text-gray-300">600+ Days Coding Streak</p>
+                    <p className="text-gray-300">625+ Days Coding Streak</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
@@ -64,7 +64,7 @@ export default function About() {
                   </div>
                  <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    <p className="text-gray-300">Interviewbit Global Rank : 24</p>
+                    <p className="text-gray-300">Interviewbit Global Rank : 20</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
