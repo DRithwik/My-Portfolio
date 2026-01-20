@@ -7,13 +7,13 @@ export default function CodingPlatforms() {
       name: 'GeeksforGeeks',
       username: 'rithwik_d',
       url: 'https://auth.geeksforgeeks.org/user/rithwik_d',
-      achievements: 'Rank #1 in Institute (VCE), 625+ Days Streak'
+      achievements: 'Rank #1 in Institute (VCE), 630+ Days Streak'
     },
     {
       name: 'InterviewBit',
       username: 'rithwik-d',
       url: 'https://www.interviewbit.com/profile/rithwik-d/',
-      achievements: 'Global Rank #20'
+      achievements: 'Global Rank #18'
     },
     {
       name: 'Coding Ninjas',
