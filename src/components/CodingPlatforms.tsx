@@ -7,19 +7,19 @@ export default function CodingPlatforms() {
       name: 'GeeksforGeeks',
       username: 'rithwik_d',
       url: 'https://auth.geeksforgeeks.org/user/rithwik_d',
-      achievements: 'Rank #1 in Institute (VCE), 645+ Days Streak'
+      achievements: 'Rank #1 in Institute (VCE), 650+ Days Streak'
     },
     {
       name: 'InterviewBit',
       username: 'rithwik-d',
       url: 'https://www.interviewbit.com/profile/rithwik-d/',
-      achievements: 'Global Rank #17'
+      achievements: 'Global Rank #12'
     },
     {
       name: 'Coding Ninjas',
       username: 'rithwik_d',
       url: 'https://www.naukri.com/code360/profile/e79ad955-af5d-4a19-beca-cb89b1e84273',
-      achievements: '3 Times Topper (VCE), Level 7 in Code 360,'
+      achievements: '4 Times Topper (VCE), Level 7 in Code 360,'
     },
     {
       name: 'CodeChef',
