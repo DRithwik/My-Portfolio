@@ -50,6 +50,10 @@ export default function About() {
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
                     <p className="text-gray-300">Rank 1 in Institute (VCE) on GeeksforGeeks</p>
                   </div>
+                   <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                    <p className="text-gray-300">Interviewbit Global Rank : 9</p>
+                  </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
                     <p className="text-gray-300">Secured rank 326 in Job-A-Thon 36 Hiring Challenge</p>
@@ -61,10 +65,6 @@ export default function About() {
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
                     <p className="text-gray-300">Letter of Recommendation from IIT Bombay</p>
-                  </div>
-                 <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    <p className="text-gray-300">Interviewbit Global Rank : 17</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
