@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
@@ -15,7 +15,7 @@ import FrontendDevelopment from './pages/SkillPages/FrontendDevelopment';
 import BackendDevelopment from './pages/SkillPages/BackendDevelopment';
 import CSFundamentals from './pages/SkillPages/CSFundamentals';
 import OtherSkills from './pages/SkillPages/OtherSkills';
-      
+       
 export default function App() {
   return (
     <Router>
