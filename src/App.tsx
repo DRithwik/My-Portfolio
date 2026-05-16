@@ -16,7 +16,7 @@ import BackendDevelopment from './pages/SkillPages/BackendDevelopment';
 import CSFundamentals from './pages/SkillPages/CSFundamentals';
 import OtherSkills from './pages/SkillPages/OtherSkills';
             
-
+ 
 
 export default function App() {
   return (
