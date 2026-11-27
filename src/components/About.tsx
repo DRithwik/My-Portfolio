@@ -1,5 +1,6 @@
 import React from 'react'; 
 import { User, FileText, ExternalLink } from 'lucide-react';
+import { formatDuration, totalMonths } from '../data/experience';
  
 export default function About() {
   return (
@@ -68,7 +69,9 @@ export default function About() {
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    <p className="text-gray-300">Software Developer Intern at Inventiglobe Pvt. Ltd.</p>
+                    <p className="text-gray-300">
+                      Associate Software Engineer at FPT Software · {formatDuration(totalMonths())} experience
+                    </p>
                   </div>
                 </div>
                 <a
