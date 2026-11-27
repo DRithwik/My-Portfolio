@@ -85,25 +85,97 @@
            hover:text-blue-300 transition-colors group-hover:gap-2;
   }
 
-  /* Experience timeline: --accent is set per company in Experience.tsx */
-  .exp-card {
-    @apply relative rounded-xl border border-gray-700/60 bg-gray-800/40 p-4 md:p-6
+  /* Glow system. Put .glow-group and a --accent colour on an item; its
+     .glow-card / .glow-tile / badges light up in that colour on hover. */
+  .glow-card {
+    @apply relative rounded-xl border border-gray-700/60 bg-gray-800/40
            backdrop-blur-sm transition-all duration-300;
   }
-  .exp-item:hover .exp-card {
+  .glow-group:hover .glow-card,
+  .glow-card.glow-self:hover {
     border-color: var(--accent);
     box-shadow: 0 14px 40px -18px var(--accent);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
-  .exp-logo {
-    @apply w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl overflow-hidden transition-transform duration-300;
+  .glow-tile {
+    @apply relative shrink-0 overflow-hidden grid place-items-center transition-transform duration-300;
     box-shadow: 0 0 0 4px rgb(17 24 39), 0 0 0 5px rgb(255 255 255 / 0.08),
       0 10px 28px -12px var(--accent);
   }
-  .exp-item:hover .exp-logo {
+  .glow-group:hover .glow-tile {
     transform: scale(1.08) rotate(-3deg);
     box-shadow: 0 0 0 4px rgb(17 24 39), 0 0 0 5px var(--accent),
       0 0 30px -4px var(--accent);
+  }
+  .tile-tint {
+    color: var(--accent);
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent) 32%, #111827),
+      color-mix(in srgb, var(--accent) 6%, #111827)
+    );
+  }
+  .accent-text {
+    color: var(--accent);
+  }
+  .accent-dot {
+    background: var(--accent);
+  }
+  .accent-chip {
+    @apply text-xs px-2.5 py-1 rounded-full border whitespace-nowrap;
+    color: color-mix(in srgb, var(--accent) 70%, white);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-color: color-mix(in srgb, var(--accent) 32%, transparent);
+  }
+  .glow-group .tech-badge {
+    color: color-mix(in srgb, var(--accent) 70%, white);
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    border-color: color-mix(in srgb, var(--accent) 32%, transparent);
+  }
+  .glow-group .tech-badge:hover {
+    background: color-mix(in srgb, var(--accent) 26%, transparent);
+  }
+  .glow-arrow {
+    opacity: 0;
+    transform: translate(-4px, 4px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .glow-group:hover .glow-arrow {
+    opacity: 1;
+    transform: none;
+  }
+  .accent-underline {
+    @apply relative;
+  }
+  .accent-underline::after {
+    content: '';
+    @apply absolute left-0 -bottom-1 h-0.5 w-0 rounded-full transition-all duration-300;
+    background: var(--accent);
+  }
+  .glow-group:hover .accent-underline::after {
+    @apply w-full;
+  }
+
+  /* Fade-up as things scroll into view (see components/ui/Reveal.tsx) */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .reveal.reveal-in {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .glow-group:hover .glow-card,
+    .glow-group:hover .glow-tile {
+      transform: none;
+    }
   }
 }
 

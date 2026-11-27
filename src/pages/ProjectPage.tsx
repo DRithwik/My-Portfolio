@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { ArrowLeft, ExternalLink, Globe } from 'lucide-react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
+import Reveal from '../components/ui/Reveal';
 
 export default function ProjectPage() {
   const navigate = useNavigate();
@@ -47,26 +48,28 @@ export default function ProjectPage() {
         ))}
 
         <div className="grid gap-6 mb-12">
-          {detail.sections.map((s) => (
-            <div key={s.title} className="bg-gray-800/40 border border-gray-700/60 rounded-xl p-6">
-              <h2 className="text-xl font-semibold mb-2" style={{ color: 'var(--accent-text)' }}>
-                {s.title}
-              </h2>
-              <p className="text-gray-300 mb-4 leading-relaxed">{s.text}</p>
-              <a
-                href={s.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
-              >
-                {s.url.replace('https://', '')} <ExternalLink size={16} />
-              </a>
-            </div>
+          {detail.sections.map((s, i) => (
+            <Reveal key={s.title} delay={i * 60} className="glow-group">
+              <div className="glow-card p-6">
+                <h2 className="text-xl font-semibold mb-2" style={{ color: 'var(--accent-text)' }}>
+                  {s.title}
+                </h2>
+                <p className="text-gray-300 mb-4 leading-relaxed">{s.text}</p>
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  {s.url.replace('https://', '')} <ExternalLink size={16} />
+                </a>
+              </div>
+            </Reveal>
           ))}
         </div>
 
         <h2 className="text-2xl font-semibold mb-4">Built with</h2>
-        <div className="flex flex-wrap gap-2">
+        <div className="glow-group flex flex-wrap gap-2">
           {detail.tech.map((t) => (
             <span key={t} className="tech-badge">
               {t}

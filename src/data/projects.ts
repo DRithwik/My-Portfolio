@@ -19,6 +19,7 @@ export interface ProjectDetail {
 
 export interface Project {
   slug: string;
+  accent: string; // brand colour for the card glow and badges
   title: string;
   desc?: string;
   tech: string[];
@@ -33,6 +34,7 @@ const ATMAGYAN = 'https://atmagyan.online';
 export const projects: Project[] = [
   {
     slug: 'atmagyan',
+    accent: '#f59e0b',
     title: 'Atma Gyan',
     desc: '',
     tech: ['Node.js', 'TypeScript', 'Puppeteer', 'FFmpeg', 'YouTube Data API'],
@@ -85,6 +87,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'rx-appoints',
+    accent: '#2dd4bf',
     title: 'Rx Appoints',
     desc: '',
     tech: ['React.js', 'TypeScript', 'MongoDB', 'Solidity'],
@@ -99,6 +102,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'deep-research-agent',
+    accent: '#60a5fa',
     title: 'Deep Research AI Agent',
     desc: '',
     tech: ['Next.js', 'GPT-4o', 'Exa Search API', 'TypeScript'],
@@ -113,6 +117,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'loop-clone',
+    accent: '#a78bfa',
     title: 'Microsoft Loop Clone',
     tech: ['Next.js', 'JavaScript', 'CSS', 'Clerk'],
     image: '/projects/loop-clone.svg',

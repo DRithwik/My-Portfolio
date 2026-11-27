@@ -28,3 +28,11 @@ export function formatMonth(ym: string): string {
   const [y, m] = ym.split('-').map(Number);
   return `${MONTHS[m - 1]} ${y}`;
 }
+
+/** Compact form for stat tiles: 16 -> "1y 4m", 7 -> "7m", 24 -> "2y" */
+export function formatDurationShort(months: number): string {
+  const y = Math.floor(months / 12);
+  const m = months % 12;
+  if (!y) return `${m}m`;
+  return m ? `${y}y ${m}m` : `${y}y`;
+}

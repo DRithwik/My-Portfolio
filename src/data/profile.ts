@@ -1,5 +1,5 @@
 // Who you are: name, links, About text, resume and contact copy.
-import { stats } from './codingPlatforms';
+import { stats, platformAccent } from './codingPlatforms';
 
 export const profile = {
   name: 'Rithwik Deshaboina',
@@ -24,13 +24,25 @@ export const aboutParagraphs = [
   'Having an enhanced background of React and Next.js, a sense of creating a personality-based user-interfaces. I am eager to develop quality software that will change a difference.',
 ];
 
-// Highlights in the About card. The numbers come from codingPlatforms.ts;
-// the current-role line is added automatically from experience.ts.
+// About card. `aboutStats` are the big counting numbers (values come from
+// codingPlatforms.ts); an Experience tile is added automatically from
+// experience.ts. `highlights` are the short lines under them.
+export interface AboutStat {
+  value: number;
+  prefix?: string;
+  suffix?: string;
+  label: string;
+  accent: string;
+}
+
+export const aboutStats: AboutStat[] = [
+  { prefix: '#', value: stats.gfg.instituteRank, label: 'GFG rank in institute (VCE)', accent: platformAccent('gfg') },
+  { prefix: '#', value: stats.interviewbit.globalRank, label: 'InterviewBit global rank', accent: platformAccent('interviewbit') },
+  { value: stats.gfg.streakDays, suffix: '+', label: 'Days coding streak', accent: '#f97316' },
+];
+
 export const highlights = [
-  `Rank ${stats.gfg.instituteRank} in Institute (VCE) on GeeksforGeeks`,
-  `Interviewbit Global Rank : ${stats.interviewbit.globalRank}`,
   'Secured rank 326 in Job-A-Thon 36 Hiring Challenge',
-  `${stats.gfg.streakDays}+ Days Coding Streak`,
   'Letter of Recommendation from IIT Bombay',
 ];
 
