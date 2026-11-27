@@ -44,9 +44,12 @@ export default function CodingPlatforms() {
   return (
     <section id="coding-platforms" className="py-20 px-4 bg-gray-800/50">
       <div className="max-w-4xl mx-auto">
-        <div className="flex items-center gap-2 mb-12">
-          <Code2 className="text-blue-400" />
-          <h2 className="text-3xl font-bold">Coding Platforms</h2>
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-12">
+          <div className="flex items-center gap-2">
+            <Code2 className="text-blue-400" />
+            <h2 className="text-3xl font-bold">Coding Platforms</h2>
+          </div>
+          <span className="text-sm text-gray-400">Last updated: May 2026</span>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
