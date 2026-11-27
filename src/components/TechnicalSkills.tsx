@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Code2, Database, Terminal, Brain, Globe, Shield, Blocks } from 'lucide-react';
+import { Terminal } from 'lucide-react';
+import { skillCategories, skillPath } from '../data/skills';
 
 export default function TechnicalSkills() {
   const navigate = useNavigate();
@@ -9,68 +10,6 @@ export default function TechnicalSkills() {
     window.scrollTo(0, 0);
     navigate(route);
   };
-
-  const skillCategories = [
-    {
-      title: 'Frontend Development',
-      icon: Code2,
-      route: '/skills/frontend',
-      skills: [
-        'React.js',
-        'Next.js',
-        'TypeScript',
-        'Tailwind CSS',
-        'SCSS/SASS',
-        'HTML5/CSS3',
-        'Redux',
-        'Material UI'
-      ]
-    },
-    {
-      title: 'Backend Development',
-      icon: Globe,
-      route: '/skills/backend',
-      skills: [
-        'Node.js',
-        'Express.js',
-        'REST APIs',
-        'MongoDB',
-        'Mongoose',
-        'SQL',
-        'JWT',
-        'WebSocket'
-      ]
-    },
-    {
-      title: 'CS Fundamentals',
-      icon: Brain,
-      route: '/skills/cs-fundamentals',
-      skills: [
-        'Data Structures',
-        'Algorithms',
-        'OOPS',
-        'Operating Systems',
-        'DBMS',
-        'Computer Networks',
-        'System Design'
-      ]
-    },
-    {
-      title: 'Other Skills',
-      icon: Blocks,
-      route: '/skills/other',
-      skills: [
-        'Git/GitHub',
-        'Docker',
-        'AWS',
-        'Blockchain',
-        'Ethereum',
-        'Smart Contracts',
-        'Ethical Hacking',
-        'Penetration Testing'
-      ]
-    }
-  ];
 
   return (
     <section id="skills" className="py-20 px-4 bg-gray-800/50">
@@ -85,7 +24,7 @@ export default function TechnicalSkills() {
             <div
               key={category.title}
               className="skill-category-card p-6 bg-gray-800/30 rounded-xl border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300 cursor-pointer"
-              onClick={() => handleNavigation(category.route)}
+              onClick={() => handleNavigation(skillPath(category))}
             >
               <div className="flex items-center gap-2 mb-4">
                 <category.icon className="text-blue-400" size={20} />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Home, Clock } from 'lucide-react';
+import { profile } from '../data/profile';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,7 +60,7 @@ export default function Navigation() {
             }}
             className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500"
           >
-            Rithwik.tech
+            {profile.brand}
           </a>
           <div className="hidden md:flex items-center gap-2 text-gray-400">
           </div>

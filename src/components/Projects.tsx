@@ -1,76 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Code2, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import ProjectDetails from './ProjectDetails';
-
-interface Project {
-  title: string;
-  desc?: string;
-  tech: string[];
-  image: string;
-  link: string;
-  detailPath?: string;
-  points: string[];
-}
-
-const projects: Project[] = [
-  {
-    title: 'Atma Gyan',
-    desc: '',
-    tech: ['Node.js', 'TypeScript', 'Puppeteer', 'FFmpeg', 'YouTube Data API'],
-    image: '/projects/atmagyan.svg',
-    link: 'https://atmagyan.online',
-    detailPath: '/projects/atmagyan',
-    points: [
-      'Sanātana Dharma knowledge hub on Advaita Vedānta.',
-      'Covers philosophy schools, sacred texts and sages.',
-      'Tattvajña profiles with quotes, FAQs and works.',
-      'Automated daily YouTube Shorts of Gītā verses.'
-    ]
-  },
-  {
-    title: 'Rx Appoints',
-    desc: '',
-    tech: ['React.js', 'TypeScript', 'MongoDB', 'Solidity'],
-    image: '/projects/rx-appoints.svg',
-    link: 'https://github.com/DRithwik/Rx_appoints',
-    points: [
-      'AI models (RF, LSTM) for medicine suggestions.',
-      'BERT-based assistant for queries and reminders.',
-      'Secured prescriptions via Ethereum and IPFS.',
-      'Unified AI, NLP & blockchain system.'
-    ]
-  },
-  {
-    title: 'Deep Research AI Agent',
-    desc: '',
-    tech: ['Next.js', 'GPT-4o', 'Exa Search API', 'TypeScript'],
-    image: '/projects/deep-research.svg',
-    link: 'https://github.com/DRithwik/Deep-Research-AI-Agent',
-    points: [
-      'Built an AI agent with Next.js & multi-LLM support.',
-      'Integrated Exa API for advanced data retrieval.',
-      'Enabled iterative, customizable research workflows.',
-      'Built a modular UI with Tailwind and Shadcn UI.'
-    ]
-  },
-  {
-    title: 'Microsoft Loop Clone',
-    tech: ['Next.js', 'JavaScript', 'CSS', 'Clerk'],
-    image: '/projects/loop-clone.svg',
-    link: 'https://github.com/DRithwik/Microsoft-Loop-Clone',
-    points: [
-      'A Next.js-based collaborative workspace app',
-      'Enables editing & teamwork using Liveblocks',
-      'Integrates AI assistance via Gemini API',
-      'Secured with Clerk authentication'
-    ]
-  }
-];
+import { projects, projectPath } from '../data/projects';
 
 export default function Projects() {
-  const [showProjectDetails, setShowProjectDetails] = useState(false);
-
   return (
     <section id="projects" className="py-20 px-4 relative overflow-hidden">
       <div className="max-w-4xl mx-auto relative z-10">
@@ -92,8 +25,8 @@ export default function Projects() {
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
                   </div>
                 );
-                return project.detailPath ? (
-                  <Link to={project.detailPath} aria-label={`${project.title} details`} className="block cursor-pointer">
+                return project.detail ? (
+                  <Link to={projectPath(project)} aria-label={`${project.title} details`} className="block cursor-pointer">
                     {image}
                   </Link>
                 ) : (
@@ -124,23 +57,12 @@ export default function Projects() {
                   >
                     View <ExternalLink size={16} />
                   </a>
-                  {project.title === 'Notion Clone' && (
-                    <button 
-                      onClick={() => setShowProjectDetails(true)}
-                      className="project-link"
-                    >
-                      View Details <ExternalLink size={16} />
-                    </button>
-                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-      {showProjectDetails && (
-        <ProjectDetails onClose={() => setShowProjectDetails(false)} />
-      )}
     </section>
   );
 }

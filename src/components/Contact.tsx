@@ -1,19 +1,20 @@
 import React from 'react';
 import { MessageSquare, Phone, Mail, ExternalLink } from 'lucide-react';
+import { profile, contact } from '../data/profile';
 
 export default function Contact() {
   const contactInfo = [
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 7989585736',
-      href: 'tel:+917989585736'
+      value: profile.phone,
+      href: `tel:${profile.phone.replace(/\s/g, '')}`
     },
     {
       icon: Mail,
       label: 'Email',
-      value: 'rithwikdmail@gmail.com',
-      href: 'mailto:rithwikdmail@gmail.com'
+      value: profile.email,
+      href: `mailto:${profile.email}`
     }
   ];
 
@@ -22,11 +23,10 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex items-center justify-center gap-2 mb-8">
           <MessageSquare className="text-blue-400" />
-          <h2 className="text-3xl font-bold">Let's Create Something Amazing Together</h2>
+          <h2 className="text-3xl font-bold">{contact.heading}</h2>
         </div>
         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-          I'm always excited to collaborate on new projects and bring innovative ideas to life. 
-          Whether you have a specific project in mind or just want to connect, I'd love to hear from you.
+          {contact.text}
         </p>
         
         <div className="flex flex-col md:flex-row gap-6 justify-center mb-8">
@@ -43,7 +43,7 @@ export default function Contact() {
         </div>
 
         <a 
-          href="mailto:rithwikdmail@gmail.com" 
+          href={`mailto:${profile.email}`} 
           className="btn-primary inline-flex items-center gap-2"
         >
           Get in Touch <ExternalLink size={18} />
