@@ -11,7 +11,8 @@ export interface ExperienceItem {
   location?: string;
   start: string; // YYYY-MM
   end?: string; // YYYY-MM, omit if current
-  logo?: string;
+  logo?: string; // path under /public
+  accent?: string; // brand colour used for glow and company name
   points: string[];
 }
 
@@ -22,6 +23,8 @@ export const experiences: ExperienceItem[] = [
     employmentType: 'Full-time',
     location: 'Hyderabad, Telangana, India · On-site',
     start: '2026-05',
+    logo: '/logos/fpt.png',
+    accent: '#f58a3c',
     points: [],
   },
   {
@@ -30,6 +33,8 @@ export const experiences: ExperienceItem[] = [
     employmentType: 'Internship',
     location: 'Madhapur, Hyderabad · On-site',
     start: '2025-08',
+    logo: '/logos/inventiglobe.png',
+    accent: '#5ec8b9',
     end: '2026-01',
     points: [
       'Developed and improved features for the HR management page, streamlining company workflows.',
@@ -43,6 +48,8 @@ export const experiences: ExperienceItem[] = [
     role: 'Full Stack Developer',
     company: 'TechnoHacks Solution Pvt. Ltd.',
     start: '2025-01',
+    logo: '/logos/technohacks.png',
+    accent: '#c04ef0',
     end: '2025-03',
     points: [
       'Developed and maintained scalable web applications using React.js and Node.js',
