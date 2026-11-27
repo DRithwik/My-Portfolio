@@ -83,6 +83,7 @@ export default function About() {
                   View / Download Resume
                   <ExternalLink size={16} className="transform group-hover:translate-x-1 transition-transform" />
                 </a>
+                <p className="text-sm text-gray-400 mt-2">Last updated: May 2026</p>
               </div>
             </div>
           </div>
