@@ -13,6 +13,7 @@ export type SkillSection =
 export interface SkillCategory {
   slug: string;
   title: string; // card title on the home page
+  accent: string; // brand colour for the card and its page
   icon: LucideIcon; // card icon
   skills: string[]; // badges on the home page card
   page: {
@@ -25,6 +26,7 @@ export interface SkillCategory {
 export const skillCategories: SkillCategory[] = [
   {
     slug: 'frontend',
+    accent: '#38bdf8',
     title: 'Frontend Development',
     icon: Code2,
     skills: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'SCSS/SASS', 'HTML5/CSS3', 'Redux', 'Material UI'],
@@ -79,6 +81,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     slug: 'backend',
+    accent: '#34d399',
     title: 'Backend Development',
     icon: Globe,
     skills: ['Node.js', 'Express.js', 'REST APIs', 'MongoDB', 'Mongoose', 'SQL', 'JWT', 'WebSocket'],
@@ -128,6 +131,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     slug: 'cs-fundamentals',
+    accent: '#a78bfa',
     title: 'CS Fundamentals',
     icon: Brain,
     skills: ['Data Structures', 'Algorithms', 'OOPS', 'Operating Systems', 'DBMS', 'Computer Networks', 'System Design'],
@@ -185,6 +189,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     slug: 'other',
+    accent: '#f59e0b',
     title: 'Other Skills',
     icon: Blocks,
     skills: ['Git/GitHub', 'Docker', 'AWS', 'Blockchain', 'Ethereum', 'Smart Contracts', 'Ethical Hacking', 'Penetration Testing'],

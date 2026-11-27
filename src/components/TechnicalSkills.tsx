@@ -1,12 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Terminal } from 'lucide-react';
+import { Terminal, ArrowUpRight } from 'lucide-react';
 import { skillCategories, skillPath } from '../data/skills';
+import Reveal from './ui/Reveal';
+import Tile from './ui/Tile';
 
 export default function TechnicalSkills() {
   const navigate = useNavigate();
 
-  const handleNavigation = (route: string) => {
+  const open = (route: string) => {
     window.scrollTo(0, 0);
     navigate(route);
   };
@@ -20,24 +22,33 @@ export default function TechnicalSkills() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {skillCategories.map((category) => (
-            <div
-              key={category.title}
-              className="skill-category-card p-6 bg-gray-800/30 rounded-xl border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300 cursor-pointer"
-              onClick={() => handleNavigation(skillPath(category))}
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <category.icon className="text-blue-400" size={20} />
-                <h3 className="text-xl font-semibold">{category.title}</h3>
+          {skillCategories.map((category, i) => (
+            <Reveal key={category.slug} delay={(i % 2) * 120} className="glow-group h-full">
+              <div
+                role="link"
+                tabIndex={0}
+                onClick={() => open(skillPath(category))}
+                onKeyDown={(e) => e.key === 'Enter' && open(skillPath(category))}
+                className="glow-card p-6 h-full cursor-pointer"
+                style={{ '--accent': category.accent } as React.CSSProperties}
+              >
+                <div className="flex items-center gap-4 mb-5">
+                  <Tile icon={category.icon} size="md" />
+                  <h3 className="text-xl font-semibold flex-1">{category.title}</h3>
+                  <ArrowUpRight
+                    size={20}
+                    className="accent-text glow-arrow"
+                  />
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill) => (
+                    <span key={skill} className="tech-badge">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill) => (
-                  <span key={skill} className="tech-badge">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

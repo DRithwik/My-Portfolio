@@ -6,12 +6,23 @@ export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState(new Date());
+  const [active, setActive] = useState('#');
 
   useEffect(() => {
+    const sectionIds = ['about', 'experience', 'projects', 'coding-platforms', 'contact'];
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+      // Highlight the last section whose top has passed the nav bar.
+      let current = '#';
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= 140) current = `#${id}`;
+      }
+      const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 4;
+      setActive(atBottom ? '#contact' : current);
     };
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     // Update time every second
     const timer = setInterval(() => {
@@ -71,7 +82,9 @@ export default function Navigation() {
             <a
               key={label}
               href={href}
-              className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium flex items-center gap-2"
+              className={`relative text-sm font-medium flex items-center gap-2 transition-colors duration-200 ${
+                active === href ? 'text-white' : 'text-gray-300 hover:text-white'
+              }`}
               onClick={(e) => {
                 if (href === '#') {
                   e.preventDefault();
@@ -82,6 +95,11 @@ export default function Navigation() {
             >
               {Icon && <Icon size={16} />}
               {label}
+              <span
+                className={`absolute -bottom-1.5 left-0 h-0.5 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-300 ${
+                  active === href ? 'w-full opacity-100' : 'w-0 opacity-0'
+                }`}
+              />
             </a>
           ))}
         </div>
@@ -102,7 +120,9 @@ export default function Navigation() {
             <a
               key={label}
               href={href}
-              className="flex items-center gap-2 py-3 text-gray-300 hover:text-white transition-colors duration-200"
+              className={`flex items-center gap-2 py-3 transition-colors duration-200 ${
+                active === href ? 'text-white font-medium' : 'text-gray-300 hover:text-white'
+              }`}
               onClick={(e) => {
                 if (href === '#') {
                   e.preventDefault();
