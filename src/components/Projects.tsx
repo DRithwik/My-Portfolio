@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     title: 'Atma Gyan',
     desc: '',
-    tech: ['Node.js', 'TypeScript', 'Puppeteer', 'FFmpeg', 'YouTube Data API'],
+    tech: ['Node.js', 'TypeScript', 'FFmpeg', 'YouTube API'],
     image: '/projects/atmagyan.svg',
     link: 'https://atmagyan.online',
     detailPath: '/projects/atmagyan',
