@@ -7,7 +7,7 @@ const projects = [
     title: 'Rx Appoints',
     desc: '',
     tech: ['React.js', 'TypeScript', 'MongoDB', 'Solidity'],
-    image: 'https://i.ibb.co/whJC4Hv0/Screenshot-2025-10-16-194407.png',
+    image: '/projects/rx-appoints.svg',
     link: 'https://github.com/DRithwik/Rx_appoints',
     points: [
       'AI models (RF, LSTM) for medicine suggestions.',
@@ -19,7 +19,7 @@ const projects = [
   {
     title: 'Microsoft Loop Clone',
     tech: ['Next.js', 'JavaScript', 'CSS', 'Clerk'],
-    image: 'https://i.ibb.co/bgzLGGmr/image.png',
+    image: '/projects/loop-clone.svg',
     link: 'https://github.com/DRithwik/Microsoft-Loop-Clone',
     points: [
       'A Next.js-based collaborative workspace app',
@@ -32,7 +32,7 @@ const projects = [
     title: 'Deep Research AI Agent',
     desc: '',
     tech: ['Next.js', 'GPT-4o', 'Exa Search API', 'TypeScript'],
-    image: 'https://i.ibb.co/N2JVPMLp/Final-output-with-report.png',
+    image: '/projects/deep-research.svg',
     link: 'https://github.com/DRithwik/Deep-Research-AI-Agent',
     points: [
       'Built an AI agent with Next.js & multi-LLM support.',
@@ -44,7 +44,7 @@ const projects = [
   {
     title: "Password Generator",
     tech: ["React.js", "JavaScript", "CSS", "HTML"],
-    image: "https://i.ibb.co/Y7shBCY/image.png",
+    image: "/projects/password-generator.svg",
     link: "https://github.com/DRithwik/Password-Generator",
     points: [
       "Developed a password generator using React",
