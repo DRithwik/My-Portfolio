@@ -159,3 +159,15 @@
     transform: translateY(0);
   }
 }
+/* Project detail pages: --accent / --accent-text are set from src/data/projects.ts */
+.accent-border-soft {
+  border-color: color-mix(in srgb, var(--accent) 20%, transparent);
+}
+.accent-btn {
+  color: var(--accent-text);
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+.accent-btn:hover {
+  background-color: color-mix(in srgb, var(--accent) 25%, transparent);
+}

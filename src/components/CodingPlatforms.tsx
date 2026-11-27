@@ -1,46 +1,9 @@
 import React from 'react';
 import { Code2, ExternalLink } from 'lucide-react';
+import { platforms, codingStatsLastUpdated } from '../data/codingPlatforms';
+import { formatMonth } from '../lib/dates';
 
 export default function CodingPlatforms() {
-  const platforms = [
-    {
-      name: 'GeeksforGeeks',
-      username: 'rithwik_d',
-      url: 'https://auth.geeksforgeeks.org/user/rithwik_d',
-      achievements: 'Rank #1 in Institute (VCE), 720+ Days Streak'
-    },
-    {
-      name: 'InterviewBit',
-      username: 'rithwik-d',
-      url: 'https://www.interviewbit.com/profile/rithwik-d/',
-      achievements: 'Global Rank #10'
-    },
-    {
-      name: 'Coding Ninjas',
-      username: 'rithwik_d',
-      url: 'https://www.naukri.com/code360/profile/e79ad955-af5d-4a19-beca-cb89b1e84273',
-      achievements: '5 Times Topper (VCE), Level 7 in Code 360,'
-    },
-    {
-      name: 'CodeChef',
-      username: 'rithwik007',
-      url: 'https://www.codechef.com/users/rithwik007',
-      achievements: '550+ Days Streak'
-    },
-    {
-      name: 'LeetCode',
-      username: 'd_rithwik',
-      url: 'https://leetcode.com/u/d_rithwik/',
-      achievements: 'Contest Rating: 1548 | 300 Days Badge'
-    },
-    {
-      name: 'HackerRank',
-      username: 'rithwikdmail',
-      url: 'https://www.hackerrank.com/profile/rithwikdmail',
-      achievements: 'Problem Solving & DSA'
-    }
-  ];
-
   return (
     <section id="coding-platforms" className="py-20 px-4 bg-gray-800/50">
       <div className="max-w-4xl mx-auto">
@@ -49,7 +12,7 @@ export default function CodingPlatforms() {
             <Code2 className="text-blue-400" />
             <h2 className="text-3xl font-bold">Coding Platforms</h2>
           </div>
-          <span className="text-sm text-gray-400">Last updated: May 2026</span>
+          <span className="text-sm text-gray-400">Last updated: {formatMonth(codingStatsLastUpdated)}</span>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">

@@ -11,11 +11,9 @@ import CodingPlatforms from './components/CodingPlatforms';
 import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import MouseTracker from './components/MouseTracker';
-import FrontendDevelopment from './pages/SkillPages/FrontendDevelopment';
-import BackendDevelopment from './pages/SkillPages/BackendDevelopment';
-import CSFundamentals from './pages/SkillPages/CSFundamentals';
-import OtherSkills from './pages/SkillPages/OtherSkills';
-import AtmaGyan from './pages/ProjectPages/AtmaGyan';
+import SkillPage from './pages/SkillPage';
+import ProjectPage from './pages/ProjectPage';
+import { profile } from './data/profile';
 
 // Scrolls to #section after navigating back to the home page.
 function HashScroll() {
@@ -50,15 +48,12 @@ export default function App() {
             <ScrollToTop />
             
             <footer className="py-8 px-4 text-center text-gray-400">
-              <p>© {new Date().getFullYear()} Rithwik. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} {profile.shortName}. All rights reserved.</p>
             </footer>
           </div>
         } />
-        <Route path="/skills/frontend" element={<FrontendDevelopment />} />
-        <Route path="/skills/backend" element={<BackendDevelopment />} />
-        <Route path="/skills/cs-fundamentals" element={<CSFundamentals />} />
-        <Route path="/skills/other" element={<OtherSkills />} />
-        <Route path="/projects/atmagyan" element={<AtmaGyan />} />
+        <Route path="/skills/:slug" element={<SkillPage />} />
+        <Route path="/projects/:slug" element={<ProjectPage />} />
       </Routes>
     </Router>
   );

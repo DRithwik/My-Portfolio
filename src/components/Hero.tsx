@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, ChevronDown, Sparkles } from 'lucide-react';
+import { profile } from '../data/profile';
 
 export default function Hero() {
   return (
@@ -10,18 +11,18 @@ export default function Hero() {
       <div className="z-10 text-center max-w-4xl mx-auto animate-fade-in">
         <div className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400">
           <Sparkles size={16} className="animate-pulse" />
-          <span className="text-sm">Welcome to my digital space</span>
+          <span className="text-sm">{profile.welcome}</span>
         </div>
         
         <div className="relative mb-6">
           <h1 className="text-4xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-gradient">
-            Hi, I'm Rithwik Deshaboina
+            Hi, I'm {profile.name}
           </h1>
           <div className="glow absolute -inset-1 blur-2xl opacity-25 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full"></div>
         </div>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up max-w-2xl mx-auto">
-          Turning Ideas into Code & Creativity into Reality
+          {profile.tagline}
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center mb-12">
@@ -35,9 +36,9 @@ export default function Hero() {
 
         <div className="flex gap-6 justify-center">
           {[
-            { icon: Github, href: 'https://github.com/DRithwik', label: 'GitHub' },
-            { icon: Linkedin, href: 'https://www.linkedin.com/in/rithwik-d-865a6727a/', label: 'LinkedIn' },
-            { icon: Mail, href: 'mailto:rithwikdmail@gmail.com', label: 'Email' }
+            { icon: Github, href: profile.github, label: 'GitHub' },
+            { icon: Linkedin, href: profile.linkedin, label: 'LinkedIn' },
+            { icon: Mail, href: `mailto:${profile.email}`, label: 'Email' }
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
