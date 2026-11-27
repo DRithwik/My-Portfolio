@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -15,12 +15,25 @@ import FrontendDevelopment from './pages/SkillPages/FrontendDevelopment';
 import BackendDevelopment from './pages/SkillPages/BackendDevelopment';
 import CSFundamentals from './pages/SkillPages/CSFundamentals';
 import OtherSkills from './pages/SkillPages/OtherSkills';
+import AtmaGyan from './pages/ProjectPages/AtmaGyan';
+
+// Scrolls to #section after navigating back to the home page.
+function HashScroll() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (!hash) return;
+    const t = setTimeout(() => document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: 'smooth' }), 50);
+    return () => clearTimeout(t);
+  }, [pathname, hash]);
+  return null;
+}
                
            
    
 export default function App() {
   return (
     <Router>
+      <HashScroll />
       <Routes>
         <Route path="/" element={
           <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
@@ -45,6 +58,7 @@ export default function App() {
         <Route path="/skills/backend" element={<BackendDevelopment />} />
         <Route path="/skills/cs-fundamentals" element={<CSFundamentals />} />
         <Route path="/skills/other" element={<OtherSkills />} />
+        <Route path="/projects/atmagyan" element={<AtmaGyan />} />
       </Routes>
     </Router>
   );

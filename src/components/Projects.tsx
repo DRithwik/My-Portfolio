@@ -1,9 +1,34 @@
 import React, { useState } from 'react';
 import { Code2, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import ProjectDetails from './ProjectDetails';
 
-const projects = [
-    {
+interface Project {
+  title: string;
+  desc?: string;
+  tech: string[];
+  image: string;
+  link: string;
+  detailPath?: string;
+  points: string[];
+}
+
+const projects: Project[] = [
+  {
+    title: 'Atma Gyan',
+    desc: '',
+    tech: ['Node.js', 'TypeScript', 'Puppeteer', 'FFmpeg', 'YouTube Data API'],
+    image: '/projects/atmagyan.svg',
+    link: 'https://atmagyan.online',
+    detailPath: '/projects/atmagyan',
+    points: [
+      'Sanātana Dharma knowledge hub on Advaita Vedānta.',
+      'Covers philosophy schools, sacred texts and sages.',
+      'Tattvajña profiles with quotes, FAQs and works.',
+      'Automated daily YouTube Shorts of Gītā verses.'
+    ]
+  },
+  {
     title: 'Rx Appoints',
     desc: '',
     tech: ['React.js', 'TypeScript', 'MongoDB', 'Solidity'],
@@ -14,18 +39,6 @@ const projects = [
       'BERT-based assistant for queries and reminders.',
       'Secured prescriptions via Ethereum and IPFS.',
       'Unified AI, NLP & blockchain system.'
-    ]
-  },
-  {
-    title: 'Microsoft Loop Clone',
-    tech: ['Next.js', 'JavaScript', 'CSS', 'Clerk'],
-    image: '/projects/loop-clone.svg',
-    link: 'https://github.com/DRithwik/Microsoft-Loop-Clone',
-    points: [
-      'A Next.js-based collaborative workspace app',
-      'Enables editing & teamwork using Liveblocks',
-      'Integrates AI assistance via Gemini API',
-      'Secured with Clerk authentication'
     ]
   },
   {
@@ -42,15 +55,15 @@ const projects = [
     ]
   },
   {
-    title: "Password Generator",
-    tech: ["React.js", "JavaScript", "CSS", "HTML"],
-    image: "/projects/password-generator.svg",
-    link: "https://github.com/DRithwik/Password-Generator",
+    title: 'Microsoft Loop Clone',
+    tech: ['Next.js', 'JavaScript', 'CSS', 'Clerk'],
+    image: '/projects/loop-clone.svg',
+    link: 'https://github.com/DRithwik/Microsoft-Loop-Clone',
     points: [
-      "Developed a password generator using React",
-      "Allowed users to customize password length,..",
-      "Included options for uppercase, lowercase,..",
-      "Designed a user-friendly and intuitive interface"
+      'A Next.js-based collaborative workspace app',
+      'Enables editing & teamwork using Liveblocks',
+      'Integrates AI assistance via Gemini API',
+      'Secured with Clerk authentication'
     ]
   }
 ];
@@ -68,14 +81,25 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div key={project.title} className="project-card group">
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
-              </div>
+              {(() => {
+                const image = (
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+                  </div>
+                );
+                return project.detailPath ? (
+                  <Link to={project.detailPath} aria-label={`${project.title} details`} className="block cursor-pointer">
+                    {image}
+                  </Link>
+                ) : (
+                  image
+                );
+              })()}
               <div className="p-6 relative">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.desc}</p>
