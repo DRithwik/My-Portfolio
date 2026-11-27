@@ -22,7 +22,7 @@ const projects: Project[] = [
     link: 'https://atmagyan.online',
     detailPath: '/projects/atmagyan',
     points: [
-      'Sanātana Dharma knowledge hub on Advaita Vedānta.',
+      'Sanātana Dharma knowledge hub.',
       'Covers philosophy schools, sacred texts and sages.',
       'Tattvajña profiles with quotes, FAQs and works.',
       'Automated daily YouTube Shorts of Gītā verses.'
