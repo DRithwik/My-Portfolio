@@ -1,6 +1,6 @@
 import React from 'react';
 import { User, FileText, ExternalLink } from 'lucide-react';
-import { totalMonths, currentRole } from '../data/experience';
+import { totalMonths, currentRole, monthsFor, formatDuration } from '../data/experience';
 import { aboutParagraphs, aboutStats, highlights, resume } from '../data/profile';
 import { formatMonth, formatDurationShort } from '../lib/dates';
 import CountUp from './ui/CountUp';
@@ -29,7 +29,11 @@ function StatTile({
 
 export default function About() {
   const role = currentRole();
-  const lines = role ? [`${role.role} at ${role.company}`, ...highlights] : highlights;
+  // Time in the current role only (not the total across internships).
+  const roleMonths = role ? monthsFor(role) : 0;
+  const lines = role
+    ? [`${role.role} at ${role.company} · ${formatDuration(roleMonths)}`, ...highlights]
+    : highlights;
 
   return (
     <section id="about" className="py-20 px-4 bg-gray-800/50 relative overflow-hidden">
@@ -69,13 +73,21 @@ export default function About() {
                       {s.suffix}
                     </StatTile>
                   ))}
-                  <StatTile
-                    accent={role?.accent ?? '#60a5fa'}
-                    label={role ? `Experience · ${role.company}` : 'Experience'}
-                    delay={aboutStats.length * 80}
-                  >
-                    {formatDurationShort(totalMonths())}
-                  </StatTile>
+                  {role ? (
+                    <StatTile accent={role.accent ?? '#60a5fa'} label={`At ${role.company}`} delay={aboutStats.length * 80}>
+                      {roleMonths < 12 ? (
+                        <>
+                          <CountUp value={roleMonths} /> mos
+                        </>
+                      ) : (
+                        formatDurationShort(roleMonths)
+                      )}
+                    </StatTile>
+                  ) : (
+                    <StatTile accent="#60a5fa" label="Total experience" delay={aboutStats.length * 80}>
+                      {formatDurationShort(totalMonths())}
+                    </StatTile>
+                  )}
                 </div>
 
                 <div className="space-y-3 mb-6">
